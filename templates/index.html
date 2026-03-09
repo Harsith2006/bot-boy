@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOT-BOY</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <div class="chat-container">
+
+        <div class="header">
+            <div class="logo">🤖 BOT-BOY</div>
+            <span id="username">Guest</span>
+        </div>
+
+        <div id="chat-box"></div>
+        <div id="typing">BOT-BOY is thinking...</div>
+
+        <div class="input-area">
+            <input id="input" placeholder="Type message..." onkeypress="enterSend(event)">
+            <button onclick="send()">Send</button>
+            <button onclick="clearChat()">Clear</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Email Login Popup -->
+<div id="loginPopup" class="popup">
+    <div class="popup-box">
+        <h3>🔐 Login</h3>
+        <input id="emailInput" placeholder="Enter your email">
+        <button onclick="submitLogin()">Login</button>
+        <p id="loginError"></p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
